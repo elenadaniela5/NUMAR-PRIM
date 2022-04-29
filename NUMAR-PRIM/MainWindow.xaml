@@ -36,22 +36,7 @@
         <TextBox Height="24" TextWrapping="Wrap" Text="" Width="277"/>
 
         <TextBlock Grid.Column="1" HorizontalAlignment="Left" Height="19" Margin="194,46.8,0,0" Grid.Row="6" TextWrapping="Wrap" Text="First Name:" VerticalAlignment="Top" Width="458" Grid.ColumnSpan="4"/>
-        <ListBox Grid.Column="1" HorizontalAlignment="Left" Height="44" Margin="194,153.8,0,0" Grid.Row="6" VerticalAlignment="Top" Width="297" Grid.ColumnSpan="4" SelectionChanged="ListBox_SelectionChanged" RenderTransformOrigin="0.51,0.886">
-            <ListBoxItem Content="developer" Width="457" Height="10" RenderTransformOrigin="-0.073,1.024">
 
-                <ListBoxItem.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform ScaleY="-1"/>
-                        <SkewTransform/>
-                        <RotateTransform/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </ListBoxItem.RenderTransform>
-            </ListBoxItem>
-            <ListBoxItem Content="teacher" Height="34" Width="445"/>
-            <ListBoxItem Content="parent"/>
-            <Rectangle Fill="#FFF4F4F5" Height="100" Stroke="Black" Width="100"/>
-        </ListBox>
         <TextBlock Grid.Column="1" HorizontalAlignment="Left" Height="18" Margin="194,130.8,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Job role:"
                   VerticalAlignment="Top" Width="333" Grid.ColumnSpan="4"/>
         <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="21" Margin="194,69.8,0,0" Grid.Row="6" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="248" Grid.ColumnSpan="4" RenderTransformOrigin="0.5,0.5">
@@ -67,10 +52,24 @@
         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="290" Stroke="Black" VerticalAlignment="Top" Width="209" Margin="0,46.8,0,0" Grid.Row="6" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
         <Rectangle Grid.ColumnSpan="2" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="47" Grid.RowSpan="2" Stroke="Black" VerticalAlignment="Top" Width="209" Margin="0,7,0,0" Grid.Row="5"/>
         <Rectangle Grid.ColumnSpan="5" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="1" Grid.RowSpan="2" Stroke="Black" VerticalAlignment="Top" Width="580" Grid.Column="1" Margin="189,7,0,0" Grid.Row="5"/>
-        <Rectangle Grid.ColumnSpan="6" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="113" Stroke="Black" VerticalAlignment="Top" Width="842" Margin="-48,0,-0.4,0" Grid.RowSpan="7"/>
+        <Rectangle Grid.ColumnSpan="6" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="113" Stroke="Black" VerticalAlignment="Top" Width="794" Margin="0,0,-0.4,0" Grid.RowSpan="7"/>
         <Rectangle Grid.Column="4" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="100" Margin="216,-128,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Create a Windows Forms App" VerticalAlignment="Top" Grid.ColumnSpan="5" Width="672" FontSize="40"/>
+        <ListView Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="304" Grid.RowSpan="2" VerticalAlignment="Top" Width="209" Margin="0,0.2,0,0" Grid.Row="6" SelectionChanged="ListView_SelectionChanged">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
 
+        </ListView>
+        <ListBox HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="244" Grid.Column="1" Margin="194,154.2,0,0" Grid.Row="6" Grid.ColumnSpan="4">
+            <ListBoxItem Content="developer"
+                         ></ListBoxItem>
+            <ListBoxItem Content="teacher"></ListBoxItem>
+
+            <ListBoxItem Content="student"></ListBoxItem>
+        </ListBox>
 
 
 
